@@ -1,0 +1,33 @@
+---
+import Theme from '../layouts/Theme.astro';
+
+---
+
+<Theme>
+    <h2>Contact Us</h2>
+    <p>Our office is located at <strong>6278 Main Ave, Downlow in the Spike</strong> aboard Absalom Station. We can be reached through the below form, or by calling us at <strong>81 271291</strong> on the station comms network.
+
+    <p>Please give us a brief overview of your situation and we'll get in touch with you to set up a free, confidential consultation with one of our legal professionals. You can expect to hear back from us within one cycle.</p>
+
+    <h3>Schedule a Free &amp; Confidential Consultation</h3>
+
+    <form method="post" action="#">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your full name, please!">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="So we can reach you">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" aria-describedby="messageHelp" rows="6"></textarea>
+            <small id="messageHelp" class="form-text text-muted">Your message is protected by attorney-client privilege and is <strong>completely confidential</strong>.</small>
+        </div>
+
+        <button type="submit" class="btn btn-block btn-primary">Send</button>
+    </form>
+</Theme>
